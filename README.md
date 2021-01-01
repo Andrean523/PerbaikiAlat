@@ -2,7 +2,7 @@
 
 Sistem Pakar Identifikasi Kerusakan pada Ekskavator menggunakan metode Fowarding chaining
 
-Link Demo : perbaikalat.xyz
+Link Demo : perbaikialat.xyz
 
 Username dan password admin
 Username : admin
