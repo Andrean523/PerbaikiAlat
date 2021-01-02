@@ -4,11 +4,11 @@
 
 
     $id_gejala = $_POST['id_gejala'];
-    $inisial = $_POST['inisial'];
+    $kode = $_POST['kode'];
     $nama = $_POST['nama'];
  
 
-    $sql = "UPDATE tbl_gejala SET kode_gejala ='$inisial', nama_gejala ='$nama' WHERE id_gejala='$id_gejala'";
+    $sql = "UPDATE tbl_gejala SET kode_gejala ='$kode', nama_gejala ='$nama' WHERE id_gejala='$id_gejala'";
     $result = mysqli_query($koneksi, $sql);
 
 

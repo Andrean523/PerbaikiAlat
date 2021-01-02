@@ -6,8 +6,8 @@ if (empty($_SESSION['username']) and empty($_SESSION['password'])) {
 } else {
 
     include "../../lib/koneksi.php";
-    
-//kesalahan disini
+
+    //kesalahan disini
     $id_admin = $_GET['id_admin'];
 
     $QueryHapus = mysqli_query($koneksi, "DELETE FROM tbl_admin WHERE id_admin = '$id_admin'");

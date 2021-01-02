@@ -1,10 +1,11 @@
-<?php 
-session_start(); 
+<?php
+session_start();
 
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
@@ -60,19 +61,19 @@ session_start();
               </div>
               <div class="search-item">
                 <a href="#">
-                  <img class="mr-3 rounded" width="30" src="../assets/img/products/product-3-50.png" alt="product">
+                  <img class="mr-3 rounded" width="30" src="assets/img/products/product-3-50.png" alt="product">
                   oPhone S9 Limited Edition
                 </a>
               </div>
               <div class="search-item">
                 <a href="#">
-                  <img class="mr-3 rounded" width="30" src="../assets/img/products/product-2-50.png" alt="product">
+                  <img class="mr-3 rounded" width="30" src="assets/img/products/product-2-50.png" alt="product">
                   Drone X2 New Gen-7
                 </a>
               </div>
               <div class="search-item">
                 <a href="#">
-                  <img class="mr-3 rounded" width="30" src="../assets/img/products/product-1-50.png" alt="product">
+                  <img class="mr-3 rounded" width="30" src="assets/img/products/product-1-50.png" alt="product">
                   Headphone Blitz
                 </a>
               </div>
@@ -98,30 +99,48 @@ session_start();
             </div>
           </div>
         </form>
+        <ul class="navbar-nav navbar-right">
+          <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+              <div class="d-sm-none d-lg-inline-block">Hi, <?php echo $_SESSION['username']; ?></div>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <div class="dropdown-title">Logged in 5 min ago</div>
+              <a href="features-profile.html" class="dropdown-item has-icon">
+                <i class="far fa-user"></i> Profile
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="<?php echo $baseUrl; ?>pages/logout.php" class="dropdown-item has-icon text-danger">
+                <i class="fas fa-sign-out-alt"></i> Logout
+              </a>
+            </div>
+          </li>
+        </ul>
       </nav>
       <div class="main-sidebar">
         <aside id="sidebar-wrapper">
           <div class="sidebar-brand">
-            <a href="index.html">Perbaiki Alat</a>
+            <a href="<?php echo $baseUrl; ?>pages/dashboard.php">Perbaiki Alat</a>
           </div>
           <div class="sidebar-brand sidebar-brand-sm">
-            <a href="index.html">PA</a>
+            <a href="<?php echo $baseUrl; ?>pages/dashboard.php">PA</a>
           </div>
           <ul class="sidebar-menu">
-              <li class="menu-header">Dashboard</li>
-              <li><a class="nav-link" href="<?php echo $baseUrl; ?>pages/dashboard.php"><i class="fas fa-fire"></i> <span>Dashboard</span></a></li>
-              
-              <li class="menu-header">Data Sistem Pakar</li>
-              <li><a class="nav-link" href="<?php echo $baseUrl; ?>pages/gejala/main.php"><i class="fas fa-exclamation-triangle"></i> <span>Gejala</span></a></li>
-              <li><a class="nav-link" href="<?php echo $baseUrl; ?>pages/kerusakan/main.php"><i class="fas fa-skull-crossbones"></i> <span>Kerusakan</span></a></li>
-              <li><a class="nav-link" href="blank.html"><i class="fas fa-atom"></i> <span>Relasi</span></a></li>
-              <li><a class="nav-link" href="blank.html"><i class="fas fa-book-open"></i> <span>Hasil</span></a></li>
+            <li class="menu-header">Dashboard</li>
+            <li><a class="nav-link" href="<?php echo $baseUrl; ?>pages/dashboard.php"><i class="fas fa-fire"></i> <span>Dashboard</span></a></li>
 
-              <li class="menu-header">Data Admin & User</li>
-              <li><a class="nav-link" href="<?php echo $baseUrl; ?>pages/admin/main.php"><i class="fas fa-user"></i> <span>Admin</span></a></li>
-              <li><a class="nav-link" href="<?php echo $baseUrl; ?>pages/user/main.php"><i class="fas fa-users"></i> <span>User</span></a></li>
+            <li class="menu-header">Data Sistem Pakar</li>
+            <li><a class="nav-link" href="<?php echo $baseUrl; ?>pages/gejala/main.php"><i class="fas fa-exclamation-triangle"></i> <span>Gejala</span></a></li>
+            <li><a class="nav-link" href="<?php echo $baseUrl; ?>pages/kerusakan/main.php"><i class="fas fa-skull-crossbones"></i> <span>Kerusakan</span></a></li>
+            <li><a class="nav-link" href="<?php echo $baseUrl; ?>pages/relasi/main.php"><i class="fas fa-atom"></i> <span>Relasi</span></a></li>
 
-              <li><a class="nav-link" href="<?php echo $baseUrl; ?>pages/logout.php"><i class="fas fa-sign-out-alt"></i> <span>Logout</span></a></li>
-            </ul>
+            <li class="menu-header">Data Admin & User</li>
+            <li><a class="nav-link" href="<?php echo $baseUrl; ?>pages/admin/main.php"><i class="fas fa-user"></i> <span>Admin</span></a></li>
+            <li><a class="nav-link" href="<?php echo $baseUrl; ?>pages/user/main.php"><i class="fas fa-users"></i> <span>User</span></a></li>
+            <div class="mt-4 mb-4 p-3 hide-sidebar-mini">
+              <a href="<?php echo $baseUrl; ?>pages/logout.php" class="btn btn-primary btn-lg btn-block btn-icon-split">
+                <i class="fas fa-rocket"></i> Logout
+              </a>
+            </div>
+          </ul>
         </aside>
       </div>

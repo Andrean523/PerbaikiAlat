@@ -13,6 +13,3 @@ $querySimpan = mysqli_query($koneksi, "INSERT INTO tbl_admin(nama_admin, usernam
             } else {
                 echo "<script> alert('Data  Gagal Dimasukkan'); window.location='form_tambah_bobot.php'; </script>";
             }
-
-
-?>

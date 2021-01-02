@@ -22,7 +22,3 @@
     } else {
         header("location:form_edit_admin.php?id_admin=$id_admin");
     }
-    
-
-
-?>

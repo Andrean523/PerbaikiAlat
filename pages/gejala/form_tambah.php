@@ -20,11 +20,12 @@ include "../header.php";
 
                   <form action="simpan_gejala.php" method="POST">
                     <div class="card-body">
-                      <div class="form-group">
-                        <label>Inisial Gejala</label>
-                        <input type="text" class="form-control" required="" name="inisial">
-                      </div>
                      
+                      <div class="form-group">
+                        <label>Kode Gejala</label>
+                        <input type="text" class="form-control" required="" name="kode">
+                      </div>
+
                       <div class="form-group">
                         <label>Nama Gejala</label>
                         <input type="text" class="form-control" required="" name="nama">

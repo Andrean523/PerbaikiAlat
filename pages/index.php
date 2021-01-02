@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
@@ -28,7 +29,9 @@
             </div>
 
             <div class="card card-primary">
-              <div class="card-header"><h4>Login</h4></div>
+              <div class="card-header">
+                <h4>Login</h4>
+              </div>
 
               <div class="card-body">
                 <form method="POST" action="login.php" class="needs-validation" novalidate="">
@@ -42,7 +45,7 @@
 
                   <div class="form-group">
                     <div class="d-block">
-                    	<label for="password" class="control-label">Password</label>
+                      <label for="password" class="control-label">Password</label>
                     </div>
                     <input id="password" type="password" class="form-control" name="password" tabindex="2" required>
                     <div class="invalid-feedback">
@@ -60,7 +63,7 @@
               </div>
             </div>
             <div class="simple-footer">
-              Copyright &copy; Stisla 2018
+              Copyright &copy; Perbaiki Alat v1
             </div>
           </div>
         </div>
@@ -84,4 +87,5 @@
 
   <!-- Page Specific JS File -->
 </body>
+
 </html>

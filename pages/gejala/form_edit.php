@@ -12,7 +12,7 @@ $sql =  "SELECT * FROM tbl_gejala WHERE id_gejala = '$id_gejala'";
 $result = mysqli_query($koneksi, $sql);
 $data = mysqli_fetch_array($result);
 
-$inisial =$data['kode_gejala'];
+$kode =$data['kode_gejala'];
 $nama =$data['nama_gejala'];
 
 ?>
@@ -35,11 +35,12 @@ $nama =$data['nama_gejala'];
                   <form action="aksi_edit.php" method="POST">
                     <div class="card-body">
                     <input type="hidden" name="id_gejala" value="<?php echo $data['id_gejala']; ?>">
+
                       <div class="form-group">
-                        <label>Inisial Gejala</label>
-                        <input type="text" class="form-control" required="" name = "inisial" value="<?php echo $inisial; ?>">
+                        <label>Kode Gejala</label>
+                        <input type="text" class="form-control" required="" readonly name="kode" value="<?php echo $kode; ?>">
                       </div>
-                     
+
                       <div class="form-group">
                         <label>Nama Gejala</label>
                         <input type="text" class="form-control" required="" name="nama" value="<?php echo $nama; ?>">
